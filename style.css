@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  background: #c1e0c1;
+  font-family: sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 10px 4px 0px 4px;
+  display: flex;
+  justify-content: space-between;
+  background: #c1e0c1;
+  backdrop-filter: blur(6px);
+  font-weight: bold;
+  font-size: 22px;
+  z-index: 1000;
+}
+
+.link {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+.brand {
+  color: #7e7e7e;
+  margin-top: 6px;
+}
+
+.contactSocial {
+  cursor: pointer;
+  color: #8f8f8f;
+  padding-right: 20px;
+}
+
+.contact {
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: gray;
+  margin: 6px 0px 2px 4px;
+  font-size: 16px;
+}
+
+/* LOADER */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #f0f9f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.dot-loader {
+  display: flex;
+  gap: 10px;
+}
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4caf50;
+  animation: bounce 0.6s infinite alternate;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+/* PLANT CONTAINER */
+.plant-container {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  margin: 130px auto 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.plant {
+  position: absolute;
+  bottom: 126px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 494px;
+}
+
+.stem {
+  width: 8px;
+  height: 100%;
+  background-color: green;
+  margin: 0 auto;
+}
+
+/* POT */
+.pot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135px;
+  height: 137px;
+  z-index: -200;
+}
+
+/* LEAF IMG */
+.leaf {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transform-origin: bottom center;
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* instaSocial */
+.instaSocial-container {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* Space between logo and text */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.instaSocial-logo {
+  width: 40px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Leaf Positions */
+.leaf1 {
+  bottom: 40px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.leaf2 {
+  bottom: 120px;
+  left: 10px;
+  transform: rotate(30deg);
+}
+.leaf3 {
+  bottom: 200px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.leaf4 {
+  bottom: 280px;
+  left: 10px;
+  transform: rotate(30deg);
+}
+.leaf5 {
+  bottom: 360px;
+  left: -80px;
+  transform: rotate(-30deg);
+}
+.leaf6 {
+  bottom: 440px;
+  left: 10px;
+  transform: rotate(30deg);
+}
+
+@keyframes leaf-grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.siteUnderMaintenance {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: gray;
+  margin: 6px 4px 2px 0px;
+}
+
+#content {
+  transition: opacity 0.5s ease-in;
+}
+
+@media (max-height: 700px) {
+  .navabar {
+    font-size: 16px;
+  }
+  .siteUnderMaintenance {
+    font-size: 12px;
+  }
+  .contact {
+    font-size: 12px;
+  }
+  .plant-container {
+    margin: 140px auto 0px;
+  }
+  .navabar {
+    font-size: 20px;
+  }
+}
