@@ -1,0 +1,34 @@
+:root {
+  /* Colors — from final Figma draft */
+  --green-deep: #003a03;
+  --green-mid: #2e6b27;
+  --green-fresh: #91d883;
+  --green-light: #b0f49f;
+  --green-pale: #c0c9b9;
+  --cream: #fff9e6;
+  --cream-warm: #f4eed6;
+  --cream-card: #faf4dc;
+  --ink: #1e1c0e;
+  --ink-soft: #41493d;
+  --neon: #95ff00;
+  --white: #ffffff;
+
+  /* Typography — sans-serif only for a modern, web-friendly feel */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Space Grotesk', sans-serif;
+
+  /* Spacing (8px grid) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+}

@@ -1,0 +1,60 @@
+.ticker {
+  height: 44px;
+  overflow: hidden;
+  background: var(--green-deep);
+  border-top: 1px solid rgba(255, 249, 230, 0.12);
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+  will-change: transform;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-label);
+  font-size: 13px;
+  white-space: nowrap;
+  padding: 0 var(--space-lg);
+}
+
+.label {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.value {
+  color: rgba(249, 246, 239, 0.75);
+}
+
+.change {
+  font-weight: 700;
+}
+
+.up {
+  color: var(--green-fresh);
+}
+
+.down {
+  color: #ff6b6b;
+}
+
+.divider {
+  color: rgba(249, 246, 239, 0.3);
+}
+
+@media (max-width: 640px) {
+  .ticker {
+    height: 38px;
+  }
+
+  .item {
+    font-size: 11px;
+    padding: 0 var(--space-md);
+  }
+}

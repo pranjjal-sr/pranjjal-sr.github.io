@@ -1,0 +1,127 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.field label {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-xs);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--green-pale);
+  border-radius: var(--radius-sm);
+  background: var(--cream-card);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--green-mid);
+  box-shadow: 0 0 0 3px rgba(46, 107, 39, 0.15);
+}
+
+.error {
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: 0.85rem;
+  color: #d64545;
+}
+
+.submit {
+  align-self: flex-start;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 999px;
+  background: var(--neon);
+  color: var(--ink);
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(149, 255, 0, 0.35);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+.success {
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--cream-card);
+  border: 1px solid var(--green-pale);
+  border-radius: var(--radius-lg);
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green-fresh);
+  color: var(--cream);
+  font-size: 1.6rem;
+}
+
+.success h3 {
+  font-size: 1.6rem;
+  color: var(--green-deep);
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.success p {
+  color: var(--ink-soft);
+}
+
+.reset {
+  margin-top: var(--space-md);
+  padding: 10px 24px;
+  border: 1px solid var(--green-mid);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--green-mid);
+  font-family: var(--font-label);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.reset:hover {
+  background: var(--green-mid);
+  color: var(--cream);
+}
+
+@media (max-width: 640px) {
+  .submit {
+    width: 100%;
+    text-align: center;
+  }
+}
